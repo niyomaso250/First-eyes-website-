@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet"href="style.css>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyes money saver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e9ecef;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4CAF50 0%, #e9ecef 100%);
+        }
+        .shadow-lg {
+            box-shadow: 0 18px 25px rgba(8, 13, 255, 0.1);
+        }
+        .savings-card {
+            transition: all 0.3s ease;
+        }
+        .savings-card:hover {
+            transform: translateY(-5px);
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 9px;
+            background-color: #4CAF50;
+            transition: width 0.5s ease;
+        }
+        .otp-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 4px solid #ced4da;
+            border-radius: 5px;
+            margin: 5 5px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/40x40" alt="SaveUp logo featuring a piggy bank with coins pouring out in blue and white" class="rounded-full">
+                    <h1 class="text-xl font-bold">SaveUp</h1>
+                    <h1>CEO</h1>
+                    <img src="/storage/emulated/0/Pictures/facebook/1752937154240.jpg" alt="CEO EYES" width="300">
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-200">Home</a>
+                    <a href="#" class="hover:text-blue-200">Features</a>
+                    <a href="#" class="hover:text-blue-200">How It Works</a>
+                    <a href="#" class="hover:text-blue-200">Contact</a>
+                </div>
+                <div>
+                <script src="script.js"></script>
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Smart Savings & Secure Deposits</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Automate your savings, reach your financial goals, and deposit money safely using just your phone number.</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-md font-bold hover:bg-blue-50 transition shadow-md">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Dashboard Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Your Savings Dashboard</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Total Savings Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 savings-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-700">Total Savings</h3>
+                    </div>
+                    <p class="text-3xl font-bold text-gray-800 mb-2">$2,450.00</p>
+                    <p class="text-sm text-gray-500">+$150 last month</p>
+                </div>
+
+                <!-- Savings Goals Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 savings-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-700">Savings Goals</h3>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">Emergency Fund</span>
+                            <span class="text-sm font-medium text-gray-700">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium text-gray-700">Vacation</span>
+                            <span class="text-sm font-medium text-gray-700">30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 savings-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-700">Recent Transactions</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Deposit</span>
+                            <span class="text-green-600">+$100.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Auto-Save</span>
+                            <span class="text-green-600">+$50.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Bill Payment</span>
+                            <span class="text-red-600">-$75.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Make a Deposit</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+                <div class="md:flex items-center mb-6">
+                    <div class="md:w-1/2 md:pr-4 mb-4 md:mb-0">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-700">Mobile Money Deposit</h3>
+                        <p class="text-gray-600 mb-4">Quickly deposit money using your phone number and mobile money service.</p>
+                        <img src="https://placehold.co/300x200" alt="Illustration of smartphone with dollar bills flying into it representing mobile deposits" class="rounded-md">
+                    </div>
+                    <div class="md:w-1/2 md:pl-4">
+                        <form id="depositForm">
+                            <div class="mb-4">
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div class="mb-4">
+                                <label for="amount" class="block text-sm font-medium text-gray-700 mb-1">Amount</label>
+                                <input type="number" id="amount" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="100.00">
+                            </div>
+                            <div class="mb-6">
+                                <label for="goal" class="block text-sm font-medium text-gray-700 mb-1">Savings Goal</label>
+                                <select id="goal" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select a goal</option>
+                                    <option value="emergency">Emergency Fund</option>
+                                    <option value="vacation">Vacation</option>
+                                    <option value="car">New Car</option>
+                                    <option value="home">Home Down Payment</option>
+                                </select>
+                            </div>
+                            <button type="button" id="depositBtn" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition font-medium">Deposit Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phone Verification Modal -->
+        <div id="verificationModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white rounded-lg p-6 max-w-md w-full">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Phone Verification</h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-gray-600 mb-6">We've sent a verification code to <span id="modalPhoneNumber" class="font-medium">+1 (555) 123-4567</span>. Please enter it below:</p>
+                
+                <div class="flex justify-center mb-6">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                    <input type="text" maxlength="1" class="otp-input">
+                </div>
+                
+                <button id="verifyBtn" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition font-medium">Verify</button>
+                <button id="resendBtn" class="w-full mt-2 bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 transition font-medium">Resend Code</button>
+            </div>
+        </div>
+
+        <!-- Savings Features Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Savings Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="bg-blue-100 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Round-Up Savings</h3>
+                    <p class="text-gray-600">Automatically save the change from every purchase towards your goals.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="bg-green-100 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Smart Scheduling</h3>
+                    <p class="text-gray-600">Set up automatic transfers that align with your pay schedule.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="bg-purple-100 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Secure Deposits</h3>
+                    <p class="text-gray-600">Bank-level security for all your deposits and transactions.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div class="bg-yellow-100 p-3 rounded-full inline-block mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Progress Tracking</h3>
+                    <p class="text-gray-600">Visualize your progress towards each savings goal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Happy customer Sarah Johnson smiling headshot" class="rounded-full w-12 h-12 mr-3">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"SaveUp helped me save $5,000 for my emergency fund in just 6 months. The mobile deposit feature makes it so convenient!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Happy customer Michael Chen dressed in business casual" class="rounded-full w-12 h-12 mr-3">
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I love the round-up feature. It's effortless saving that adds up quickly. The phone verification is smooth and secure."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60" alt="Happy customer Emily Rodriguez wearing glasses and smiling for testimonial" class="rounded-full w-12 h-12 mr-3">
+                        <div>
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Tracking multiple savings goals is a game-changer. The visual progress bars keep me motivated."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https  ://placehold.co/40x40" alt="SaveUp logo in white and blue">
+                        <h3 class="text-xl font-bold">SaveUp</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Smart savings for your financial goals.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><img src="https://placehold.co/24x24" alt="Facebook social media icon"></a>
+                        <a href="#"><img src="https://placehold.co/24x24" alt="Twitter social media icon"></a>
+                        <a href="#"><img src="https://placehold.co/24x24" alt="Instagram social media icon"></a>
+                        <a href="#"><img src="https://placehold.co/24x24" alt="LinkedIn social media icon"></a>
+                    </div>
+                </div>
+      
